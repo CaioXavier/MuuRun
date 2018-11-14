@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
 	<title>Sobre</title>
@@ -13,10 +13,24 @@
 
 	<link rel="stylesheet" href="css/maravaca.css">
 	<link id="" href="img/vaca.png" rel="icon" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--rodapé-->
+<style>
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style> <!--rodapé-->
+
 </head>
 
 <body>
 	<!-- Barra de navegação superior -->
+        <img src="img/muurun.png" img class="vacas-largas">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
 
@@ -24,18 +38,35 @@
 				<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger"
 				data-toggle="collapse" data-target="#maravaca-navbar">
                 </button>
-				<a class="navbar-maravaca" href="index.html">
-					<img class="zeni-menor" src="img/Zenigame.png"></a>
-					<img class="maravaca-menor" src="img/vaca.png"></a>
 			</div>
 
-			<ul id="maravaca-navbar" class="nav navbar-nav navbar-right collapse navbar-collapse" data-toggle="collapse" data-target="#bona-navbar">
+			<ul id="maravaca-navbar" class="nav navbar-nav navbar-left collapse navbar-collapse" data-toggle="collapse" data-target="#bona-navbar">
 				<li><a href="index.html">Início</a></li>
 				<li class="active"><a href="sobre.html">Sobre</a></li>
 				<li><a href="download.html">Download</a></li>
 				<li><a href="desenvolvedores.html">Desenvolvedores</a></li>
-				<li><a href="ranking.html">Ranking</a></li>
+				<li><a <button onclick="document.getElementById('modal-wrapper').style.display='block'"style="width:0px; margin-top:0px; margin-left:0px;">Ranking</button></a></li>
 			</ul>
+                        
+                        <div id="modal-wrapper" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php">
+
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                    <img src="img\vaca.png" alt="Avatar" class"avatar">
+                                    <h1 style="text-align:center">Muu Run</h1>
+                                </div>
+        
+                                <div class="container">
+                                    <input type="text" placeholder="Enter Username" name="psw"></p>
+                                    <input type="password" placeholder="Enter Password" name="psw"></p>
+                                    <button type="submit">Login</button></p>
+                                    <input type="checkbox" style="margin:26px 30px;"> Remember me
+                                    <a href="#" style="text-decoration: none; float:rigth; margin-left:200px; margin-top:26px;">Forgot Password ?</a>
+                                </div>
+                            </form>
+                       </div>
 
 		</div>
 	</nav>
@@ -45,11 +76,28 @@
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
 					<h2 class="text-uppercase" >Muu Run</h2>
-						<p>O jogo se passa no planeta Terra após uma invasão alienígena que resultou numa guerra entre homens e extraterrestres.</p>
-						<p>O jogo é protagonizado por uma vaca que após alimentar-se de grama de uma área contaminada por resquícios de um elemento misterioso, ganhou superpoderes como superinteligência, superforça e habilidade de voo. Porém esses efeitos do misterioso elemento são temporários e após determinado tempo sem consumi-los a “Vaca” retorna a ser um reles animal mortal. Para que isso não aconteça ela sai em busca do elemento misterioso para poder continuar a voar e proteger suas amigas vacas do verdadeiro mal.</p>
+						<table>
+							<tr>
+								<td align='justify'><p align='justify'>Muu Run é um jogo de infinity run (corrida infinita) conta a história de Muu, uma vaquinha comum que após alimentar-se se uma materia misteriosa ganha super poderes.</p>
+								<p align='justify'>Após a descoberta dos poderes de Muu as autoridades locais lançam uma campanha de caça a vaquinha recompensando quem a capturar primeiro. Então Muu se vê obrigada a fugir dos fazendeiros que tentam captura-la a qualquer custo. </p>
+								<p align='justify'>Ao longo do jogo você poderá acompanhar a história e descobrir os mistérios que cercam os poderes de Muu.
+								</p></td>
+							</tr>
+						</table>
+						<img class="vacas-largas" src="img/cena1quadro5.png"></a>
 					</div>
 				</div>
 		</div>
+
+		<div class="footer"> <!--rodapé conteúdo-->
+  <img class="zeni-menor" src="img/fateclogo.png"></a>
+  <img class="zeni-menor" src="img/Zenigame.png"></a>
+  <img class="zeni-menor" src="img/logocps.png"></a>
+
+  <p> </p>
+  <p>Contato </p>
+</div>
+
 </body>
 
 </html>

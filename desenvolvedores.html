@@ -1,4 +1,4 @@
-<html>
+﻿<html>
 
 <head>
 	<title>Desenvolvedores</title>
@@ -13,29 +13,60 @@
 
 	<link rel="stylesheet" href="css/maravaca.css">
 	<link id="" href="img/vaca.png" rel="icon" type="image/x-icon">
+
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--rodapé-->
+<style>
+.footer {
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: black;
+   color: white;
+   text-align: center;
+}
+</style> <!--rodapé-->
+
 </head>
 
 <body>
 	<!-- Barra de navegação superior -->
+        <img src="img/muurun.png" img class="vacas-largas">
 	<nav class="navbar navbar-default navbar-fixed-top">
-		<div class="container">
+        <div class="container">
 
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle glyphicon glyphicon-menu-hamburger"
 				data-toggle="collapse" data-target="#maravaca-navbar">
         </button>
-				<a class="navbar-maravaca" href="index.html">
-					<img class="zeni-menor" src="img/Zenigame.png"></a>
-					<img class="maravaca-menor" src="img/vaca.png"></a>
 			</div>
 
-			<ul id="maravaca-navbar" class="nav navbar-nav navbar-right collapse navbar-collapse" data-toggle="collapse" data-target="#bona-navbar">
+			<ul id="maravaca-navbar" class="nav navbar-nav navbar-left collapse navbar-collapse" data-toggle="collapse" data-target="#bona-navbar">
 				<li><a href="index.html">Início</a></li>
 				<li><a href="sobre.html">Sobre</a></li>
 				<li><a href="download.html">Download</a></li>
 				<li class="active"><a href="desenvolvedores.html">Desenvolvedores</a></li>
-				<li><a href="ranking.html">Ranking</a></li>
+				<li><a <button onclick="document.getElementById('modal-wrapper').style.display='block'"style="width:0px; margin-top:0px; margin-left:0px;">Ranking</button></a></li>
 			</ul>
+                        
+                        <div id="modal-wrapper" class="modal">
+
+                            <form class="modal-content animate" action="/action_page.php">
+
+                                <div class="imgcontainer">
+                                    <span onclick="document.getElementById('modal-wrapper').style.display='none'" class="close" title="Close PopUp">&times;</span>
+                                    <img src="img\vaca.png" alt="Avatar" class"avatar">
+                                    <h1 style="text-align:center">Muu Run</h1>
+                                </div>
+        
+                                <div class="container">
+                                    <input type="text" placeholder="Enter Username" name="psw"></p>
+                                    <input type="password" placeholder="Enter Password" name="psw"></p>
+                                    <button type="submit">Login</button></p>
+                                    <input type="checkbox" style="margin:26px 30px;"> Remember me
+                                    <a href="#" style="text-decoration: none; float:rigth; margin-left:200px; margin-top:26px;">Forgot Password ?</a>
+                                </div>
+                            </form>
+                       </div>
 
 		</div>
 	</nav>
@@ -43,8 +74,8 @@
 	<!-- Corpo da página -->
 	<div class="container">
 		<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
-		  <h2>Moon Run</h2>
-		  <p>Integrantes do grupo e suas funções no projeto:</p>
+		  <h2>Muu Run</h2>
+		  <p>Equipe de desenvolvedores:</p>
 		  <table class="table">
 		    <thead>
 		      <tr>
@@ -55,28 +86,40 @@
 		    <tbody>
 		      <tr>
 		        <td>CAIO FELIPE DE OLIVEIRA XAVIER </td>
-		        <td>Game Designer / Artista / Modelador</td>
+		        <td>Game Designer / Character Designer / UI Designer</td>
 		      </tr>
 		      <tr>
 		        <td>ASSÍRIA CAMPOS DE AQUINO</td>
-		        <td>Artista / Roteirista</td>
+		        <td>Roteirista</td>
 		      </tr>
 		      <tr>
 		        <td>DAVID SANTOS </td>
-		        <td>Modelador / Sound Designer</td>
+		        <td> Desenvolvedor Unity / Programador / Sound Designer</td>
 		      </tr>
 					<tr>
 		        <td>SAMARA ANDRADE DE ALMEIDA</td>
-		        <td>Programadora</td>
+		        <td> Desenvolvedor Unity / Programadora</td>
 		      </tr>
 					<tr>
 		        <td>JOSÉ ROBERTO CALDERON A. G. BARBOSA</td>
-		        <td>Roteirista / Artista / Programador</td>
+		        <td> Desenvolvedor Web/ Programador / Roterista</td>
 		      </tr>
 				</div>
 	    </tbody>
 	  </table>
 	</div>
+	</div>
+
+	<div class="footer"> <!--rodapé conteúdo-->
+  <img class="zeni-menor" src="img/fateclogo.png"></a>
+  <img class="zeni-menor" src="img/Zenigame.png"></a>
+  <img class="zeni-menor" src="img/logocps.png"></a>
+
+  <p> </p>
+  <p>Contato </p>
+	</div>
+
 	</body>
 
 	</html>
+	
