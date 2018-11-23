@@ -8,13 +8,16 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 	<link href="https://fonts.googleapis.com/css?family=Montserrat|Quattrocento+Sans" rel="stylesheet">
 
 	<link rel="stylesheet" href="css/maravaca.css">
 	<link id="" href="img\vaca.png" rel="icon" type="image\x-icon">
+	
 
-<meta name="viewport" content="width=device-width, initial-scale=1"> <!--rodapé-->
+	<meta name="viewport" content="width=device-width, initial-scale=1"> <!--rodapé-->
 <style>
 .footer {
    left: 0;
@@ -23,15 +26,70 @@
    background-color: black;
    color: white;
    text-align: center;
+} <!--rodapé-->
+
+.btn:focus, .btn:active, bu'tton:focus, button:active {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+#image-gallery .modal-footer{
+  display: block;
+}
+
+.thumb{
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.transition {
+    -webkit-transform: scale(1.1s); 
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+}
+#content {
+	-webkit-transition: all .4s ease-in-out;
+	-moz-transition: all .4s ease-in-out;
+	-o-transition: all .4s ease-in-out;
+	-ms-transition: all .4s ease-in-out;
+}
+
+#content {
+    width:80%;
 }
 </style> <!--rodapé-->
+<script>
+$(document).ready(function(){
+    $('#content1').hover(function() {
+        $("#content1").addClass('transition');
+    
+    }, function() {
+        $("#content1").removeClass('transition');
+    });
+
+	 $('#content2').hover(function() {
+        $("#content2").addClass('transition');
+    
+    }, function() {
+        $("#content2").removeClass('transition');
+    });
+
+	 $('#content3').hover(function() {
+        $("#content3").addClass('transition');
+    
+    }, function() {
+        $("#content3").removeClass('transition');
+    });
+});
+</script>
 
 </head>
 
 <body>
 
 	<!-- Barra de navegação superior -->
-        <img src="img/muurun.png" img class="vacas-largas">
+	<img src="img/muurun.png" img class="vacas-largas">
 	<nav class="navbar navbar-default navbar-fixed-top">
 		<div class="container">
                  
@@ -62,7 +120,8 @@
                                 <div class="container">
                                     <input type="text" placeholder="Enter Username" name="psw"></p>
                                     <input type="password" placeholder="Enter Password" name="psw"></p>
-                                    <button type="submit">Login</button></p>
+                                    <!--<button type="submit">Login</button></p>-->
+									<a href="ranking.html" class="btn btn-default">Teste</a>
                                     <input type="checkbox" style="margin:26px 30px;"> Remember me
                                     <a href="#" style="text-decoration: none; float:rigth; margin-left:200px; margin-top:26px;">Forgot Password ?</a>
                                 </div>
@@ -74,14 +133,49 @@
 	</nav>
 </div>
 	<!-- Corpo da página -->
+	
 	<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 col-sm-6 col-sm-offset-3 col-xs-6 col-xs-offset-3">
 					<h2 class="text-uppercase" >Concept Art</h2>
 					</div>
 				</div>
-		<img class="vacas-largas" src="img/personagens.png" ></a>
+				<div class="row">
+					<div class="col-md-4">
+						<img class="vacas-largas" id="content1" src="img/01.png" ></a>
+					</div>
+					<div class="col-md-4">
+						<img class="vacas-largas" id="content2" src="img/02.png" ></a>
+					</div>
+					<div class="col-md-4">
+						<img class="vacas-largas" id="content3" src="img/03.png" ></a>
+						
+					</div>
+				</div>
+		
 	</div>
+	<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title" id="image-gallery-title"></h4>
+                        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img id="image-gallery-image" class="img-responsive col-md-12" src="">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary float-left" id="show-previous-image"><i class="fa fa-arrow-left"></i>
+                        </button>
+
+                        <button type="button" id="show-next-image" class="btn btn-secondary float-right"><i class="fa fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+	<span style="padding-left:30px"></span> <!--linha espaço entre conteúdo da pg e rodapé-->
 
 <div class="footer"> <!--rodapé conteúdo-->
   <img class="zeni-menor" src="img/fateclogo.png"></a>
@@ -97,4 +191,3 @@
 </html>
 
 
-</html>
