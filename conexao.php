@@ -1,9 +1,9 @@
 <?php
 //VARIAVEIS COM CONFIGURAÇÕES DO BANCO DE DADOS
-	$host = "muurun.database.windows.net";
-	$database = "MuuRun";
+	$host = "muurun.mysql.dbaas.com.br";
+	$database = "muurun";
 	$usuario = "muurun";
-	$senha = "maravaca@2019";
+	$senha = "muurun@2018";
 	
 //CONEXÃO COM O BANCO
 	$con = new PDO("mysql:host=$host;dbname=$database", "$usuario", "$senha"); 

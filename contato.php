@@ -10,7 +10,7 @@
 		$mensagem 	= $_POST['mensagem'];
 
 	//PREPARA A QUERY PARA INSERIR OS DADOS NO BANCO DE DADOS
-		$stmt = $con->prepare("INSERT INTO dbo.tab-contato(nome, telefone, email, mensagem) VALUES(?, ?, ?, ?)");
+		$stmt = $con->prepare("INSERT INTO contato(nome, telefone, email, mensagem) VALUES(?, ?, ?, ?)");
 		$stmt->bindParam(1,$nome);
 		$stmt->bindParam(2,$telefone);
 		$stmt->bindParam(3,$email);
