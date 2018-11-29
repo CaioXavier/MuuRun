@@ -87,30 +87,36 @@
 				</p>
 			</div>	
 			<div class="col-md-4 col-md-offset-4">
-				<form>
+				<form action="contato.php" method="POST">
 					<div class="form-group">
-						<label for="exampleInputName">Nome</label>
-						<input type="name" class="form-control" id="exampleInputName" aria-describedby="nameHelp" placeholder="Seu Nome Completo">
+						<label for="nome">Nome</label>
+						<input type="text" class="form-control" id="nome"  name="nome" placeholder="Seu Nome Completo">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputPhone">Telefone</label>
-						<input type="number" class="form-control" id="exampleInputTelefone" aria-describedby="phoneHelp" placeholder="Insira Seu Telefone">
+						<label for="telefone">Telefone</label>
+						<input type="text" class="form-control" id="telefone" name="telefone" placeholder="Insira Seu Telefone">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputEmail">E-mail</label>
-						<input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Insira Seu E-mail">
+						<label for="email">E-mail</label>
+						<input type="text" class="form-control" id="email"  name="email" placeholder="Insira Seu E-mail">
 					</div>
 					<div class="form-group">
-						<label for="exampleInputMenssage">Mensagem</label>
-						<textarea class="form-control" rows="5" id="comment" placeholder="Deixe sua mensagem aqui =)"></textarea>
+						<label for="comment">Mensagem/Dúvida</label>
+						<textarea class="form-control" rows="5" id="comment" name="mensagem" placeholder="Deixe sua mensagem ou dúvida"></textarea>
 					</div>
 
 					<div class="form-group text-center" >
-						<button type="submit" class="btn btn-success" style="width:100%;">
+						<button type="submit" class="btn btn-success btn-block" >
 							<span class="glyphicon glyphicon-send" aria-hidden="true"></span> 
 							Enviar
 						</button>
 					</div>
+
+					<?php if (isset($return_message)) { ?>
+						<div class="alert alert-success">
+							<?php echo $return_message; ?>
+						</div>
+					<?php } ?>
 				</form>
 			</div>
 		</div>
