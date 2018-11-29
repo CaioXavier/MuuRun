@@ -22,10 +22,9 @@ h3 {
     width: 100%;
 }
 
-input[type=text],
 input[type=password] {
     width: 40%;
-    padding: 12px 20px;
+    padding: 8px 20px;
     margin: 8px 26px;
     display: inline-block;
     border: 1px solid #ccc;
@@ -33,18 +32,18 @@ input[type=password] {
     font-size: 16px;
 }
 
-button {
+.button2 {
     background-color: green;
     color: red;
-    padding: 14px 20px;
-    margin: 8px 26px;
+    padding: 14px 17%;
+    margin: 10px 26px;
     border: none;
     cursor: pointer;
     width: 40%;
     font-size: 20px;
 }
 
-button:hover {
+.button2:hover {
     opacity: 0.8;
 }
 
@@ -58,6 +57,7 @@ button:hover {
     width: 200px;
     height: 200px;
     border-radius: 50%;
+    position: relative;
 }
 
 .modal {
@@ -97,6 +97,34 @@ button:hover {
 
 .animate {
     animation: zoom 0.6s
+}
+
+.box-download {
+    text-align: center;
+    border: 1px solid #222;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+
+.title-download {
+    color: #000;
+    margin-top: 30px;
+    font-size: 1.3em;
+    text-align: center;
+}
+
+.footer {
+    left: 0;
+    bottom: 0;
+    width: 100% !important;
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center !important;
 }
 
 @keyframes zoom {
