@@ -1,7 +1,7 @@
 <?php
 //VARIAVEIS COM CONFIGURAÇÕES DO BANCO DE DADOS
 	$host = "muurun.database.windows.net";
-	$database = "dbo.tab-contato";
+	$database = "muurun";
 	$usuario = "muurun";
 	$senha = "maravaca@2018";
 	
