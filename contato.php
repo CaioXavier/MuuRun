@@ -94,7 +94,7 @@
 					</div>
 					<div class="form-group">
 						<label for="telefone">Telefone</label>
-						<input type="text" class="form-control" id="telefone" name="telefone" placeholder="Insira Seu Telefone">
+						<input type="number" class="form-control" id="telefone" name="telefone" placeholder="Insira Seu Telefone">
 					</div>
 					<div class="form-group">
 						<label for="email">E-mail</label>
